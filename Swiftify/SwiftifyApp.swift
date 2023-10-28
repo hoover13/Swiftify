@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftifyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(ContentModel())
         }
     }
 }
